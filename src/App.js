@@ -4,7 +4,6 @@ import axios from 'axios';
 import Select from './Select/Select';
 import ImageGrid from './ImageGrid/ImageGrid';
 
-// https://dog.ceo/api
 class App extends Component {
   constructor(props) {
     super(props);
