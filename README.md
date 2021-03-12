@@ -68,3 +68,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### https://dog.ceo/dog-api/documentation/sub-breed
+
+Queremos uma página que consigamos ver imagens das "sub-breeds" (sub-raças, em tradução literal) da raça "retriever" na nossa API de cachorros.
+Temos 2 requisitos;
+​
+1. Apresentar um `<select>` com as opções de "sub-breeds" consultadas no endpoint de sub-raças do "retriever":
+    https://dog.ceo/api/breed/retriever/list
+​
+    O endpoint retornará um JSON com uma lista de raças no atributo "message".
+    Queremos que estas raças sejam apresentadas como as opções do `<select>`.
+​
+2. Quando for selecionado alguma "sub-breed" no `<select>` criado no passo 1, queremos que sejam apresentadas as 2 primeiras fotos da "sub-breed" abaixo do `<select>`.
+    Será necessário consultar a API de listagem de "sub-breeds":
+    https://dog.ceo/api/breed/retriever/<sub-breed>/images
+​
+    Este endpoint nos retornará várias URLs de imagens, nossa intenção é apresentar as duas primeiras.
